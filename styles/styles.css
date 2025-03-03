@@ -1,3 +1,5 @@
+/*FONDO DE PAGINA*/
+
 body {
 
     background-image: url(../img/fondoindex.jpg);
@@ -7,30 +9,19 @@ body {
     background-attachment: fixed;
 }
 
-.logoindex {
-    margin-left: 350px;
-    height: 150px;
-    width: 500px;
+/*LOGO INICIO COMPLICES*/
+.contenedorlogoindex {
+   display: flex;
+   justify-content: center;
 }
 
+
+/*BOTONES DE NAVEGACION INDEX*/
 nav {
     margin-top: 20px;
     font-size: 25px;
     font-style: italic;
     text-align: left;
-}
-.carousel-item img {
-    margin-top: 25px;
-    width: 100%;
-    height: 500px;
-    border-radius: 40px;
-}
-
-.portada {
-    margin-top: 25px;
-    width: 100%;
-    height: 500px;
-    border-radius: 40px;
 }
 
 ul {
@@ -48,10 +39,22 @@ ul li {
     display: inline-block
 }
 
+/*IMAGENES DE CARRUSEL BOOSTRAP*/
+.carousel-item img {
+    margin-top: 25px;
+    width: 100%;
+    height: 500px;
+    border-radius: 40px;
+}
+
+/*IMAGENES LINKEADAS: SEXOLOGIA, LUBRICANTES, PRODUCTOS, CONTACTO*/
 .botondenavegacion {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    max-width: 100%;
+    gap: 10px;
 }
 
 .botonimagen {
@@ -59,6 +62,25 @@ ul li {
     height: 200px;
     border-radius: 100px;
 }
+
+/*FOOTER REDES SOCIALES*/
+.redes {
+    text-align: center;
+}
+
+.instagram {
+    display: flex;
+    margin-left: 48%;
+    height: 60px;
+    width: auto;
+}
+
+.instagramcomplices {
+    text-align: center;
+}
+
+/*-----------------------------------------------PAGINA SEXOLOGIA----------------------------------------------------*/
+
 .diezcosas {
     text-align: center;
     padding-top: 68px;
@@ -101,29 +123,116 @@ ul li {
     margin-left: 30px;
 }
 
+/*---------------------------------------PAGINA LUBRICANTES-----------------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-.redes {
-    text-align: center;
+.grid-padrelubricantes {
+    margin: auto;
+    display: grid;
+    width: 60vw;
+    margin: 0 auto;
+    gap: 10px;
 }
 
-.instagram {
-    display: flex;
-    margin-left: 48%;
-    height: 60px;
-    width: auto;
+.lubri1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
 }
 
-.instagramcomplices {
-    text-align: center;
+.lubri2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
+
+.lubri3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+
+.lubri4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.lubri5 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.lubri6 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.lubri1-img,
+.lubri2-img,
+.lubri3-img,
+.lubri4-img,
+.lubri5-img,
+.lubri6-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*----------------JUGUETES----------------*/
+
+.grid-padrejuguetes {
+    margin: auto;
+    display: grid;
+    width: 90vw;
+    margin: 0 auto;
+    gap:  15px;
+    
+}
+
+.juguete1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.juguete2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.juguete3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.juguete4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.juguete5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.juguete6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.juguete7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.juguete8 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.juguete9 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.juguete1-img,
+.juguete2-img,
+.juguete3-img,
+.juguete4-img,
+.juguete5-img,
+.juguete6-img,
+.juguete7-img,
+.juguete8-img,
+.juguete9-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
